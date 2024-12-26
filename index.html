@@ -47,21 +47,49 @@
                         <a class="nav-link active" href="#menu">菜單餐點</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#attractions">周邊景點</a>
+                        <a class="nav-link" href="#collections">周邊景點</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#position">莊園位置</a>
+                        <a class="nav-link" href="#googleMap">莊園位置</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#msgboard">聯絡我們</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#story">咖啡故事</a>
+                        <a class="nav-link" href="#storyModal" data-bs-toggle="modal"
+                            data-bs-target="#storyModal">咖啡故事</a>
                     </li>
                 </ul>
             </div>
         </div>
+
     </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="storyModal" tabindex="100" aria-labelledby="storyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">咖啡故事</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    沒有什麼咖啡故事
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    一天，一個老大去咖啡廳喝咖啡，帶了四五個小弟。<br>
+                    一位服務生過來。<br>
+                    「先生，你的咖啡要熱的來是冰？」服務生問。<br>
+                    老大回答：<br><br>
+                    「冰的。」<br><br><br>
+                    小弟們就翻桌了。
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">這樣喔......</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- 輪播 -->
     <div id="carouselContainer" class="container-fluid p-0">
         <div id="carouselSlides" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
@@ -70,6 +98,7 @@
                 <button type="button" data-bs-target="#carouselSlides" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#carouselSlides" data-bs-slide-to="2"></button>
             </div>
+
             <!-- 輪播圖片 -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -92,7 +121,8 @@
             </button>
         </div>
     </div>
-    <!-- 中間三格 卡片要固定大小嗎?? *-->
+
+    <!-- 中間三格 -->
     <div id="cards" class="container mt-3 mb-3 m-auto row justify-content-evenly align-items-center min-vh-100">
         <div class="col-12 col-lg-4 g-4">
             <div class="card">
@@ -107,7 +137,7 @@
         </div>
         <div class="col-12 col-lg-4 g-4">
             <div class="card">
-                <img class="card-img-top" src="https://picsum.photos/600/400/?random=10">
+                <img class="card-img-top" src="https://picsum.photos/600/400/?random=9">
                 <div class="card-body">
                     <p class="card-title">昨日顏色，推廣職業。</p>
                     <p class="card-text">
@@ -118,7 +148,7 @@
         </div>
         <div class="col-12 col-lg-4 g-4">
             <div class="card">
-                <img class="card-img-top" src="https://picsum.photos/600/400/?random=10">
+                <img class="card-img-top" src="https://picsum.photos/600/400/?random=8">
                 <div class="card-body">
                     <p class="card-title">昨日顏色，推廣職業。</p>
                     <p class="card-text">
@@ -160,6 +190,7 @@
             </div>
         </div>
     </div>
+
     <!-- 地圖 400px~50vh -->
     <div id="googleMap" class="ratio ratio-16x9">
         <iframe class="w-100" style="min-height: 400px;"
@@ -167,12 +198,13 @@
             width="600" height="450" style="border:0;" allowfullscreen="true" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
     <!-- 留言板 -->
     <div id="msgboard" class="p-0 vh-100 bg-light">
         <div class="row flex-column h-100 justify-content-center align-items-center mx-auto">
             <div class="col-11 col-lg-8 text-center mb-3">
                 <h1 class="m-4 m-lg-4">聯絡我們</h1>
-                <h4>泰山ㄉ那ㄍ咖啡ㄉ莊園，傳承熱情coding精神</h4>
+                <h4>泰山ㄉ那ㄍ咖啡ㄉ莊園，傳承熱情 CODING 奇妙冒險</h4>
                 <p>任何服務問題或建議，歡迎您留給自己，不要透過訂閱客服表單告知我們，謝謝！</p>
             </div>
             <div class="col-11 col-lg-8">
@@ -183,12 +215,12 @@
                             <input type="email" class="form-control" id="input1">
                             <span class="input-group-text ps-3 pe-0 bg-light" id="basic-addon2">
                                 <div class="form-check form-check-inline me-3 p-0">
-                                    <label class="form-check-label" for="inlineRadio1">先生</label>
+                                    <label class="form-check-label" for="inlineRadio1">異端</label>
                                     <input class="form-check-input float-none ms-0" type="radio"
                                         name="inlineRadioOptions" id="inlineRadio1" value="option1">
                                 </div>
                                 <div class="form-check form-check-inline me-3 p-0">
-                                    <label class="form-check-label" for="inlineRadio2">女士</label>
+                                    <label class="form-check-label" for="inlineRadio2">外鄉人</label>
                                     <input class="form-check-input float-none ms-0" type="radio"
                                         name="inlineRadioOptions" id="inlineRadio2" value="option2">
                                 </div>
@@ -254,11 +286,17 @@
                 <p>Email: support@mobirise.com<br>Phone: +1 (0) 000 0000 001<br>Fax: +1 (0) 000 0000 002</p>
             </div>
         </div>
-        <div class="text-center py-3">© Copyright 2024 GUESS WHO AM I - All Rights Reserved</div>
+        <div class="text-center py-3">© Copyright 2024 [16] - All Rights Reserved</div>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.js'
         integrity='sha512-sSOeacod972lTNk0ePyxrSSI6yoqvGRm7bbqtwqsY1r7TcdYiQn/a+KvaYQ0iacHBYE/MSEVjTNa2dglSz74vA=='
         crossorigin='anonymous'></script>
+    <script>
+        var myModal = document.getElementById('storyModal');
+        myModal.addEventListener('shown.bs.modal', function () {
+            console.log('Modal is shown!');
+        });
+    </script>
 </body>
 
 </html>
